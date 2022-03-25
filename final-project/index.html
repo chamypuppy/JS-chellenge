@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+  
+  <title>My JS Challenge Project</title>
+</head>
+<body>
+
+ <div id="all-box">
+
+
+  <!-- clock, weather -->
+  <div id="left-box">
+
+    <h1 id="clock">00:00:00</h1>
+
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+
+    <div id="health">
+      <span></span>
+      <br><span></span>
+    </div>
+
+    <div id="tea">
+      <span></span>
+      <br><span></span>
+    </div>
+
+  </div>
+
+    <!-- dessert-->
+
+    <div id="dessert-box">
+      <div id="dessert-img"></div> <!-- div로 만들고 position absolute하면 flex box 안에 담긴다! -->
+      <div class="dessert">
+        <span></span>
+        <br><span></span>
+      </div>
+    </div>
+
+  <!-- login, todolist -->
+
+    <div id="right-box">
+
+      <div id="login-box">
+
+    <form id="login-form">
+      <input id="login-input" 
+      type="text"
+      maxlength="12"
+      placeholder="이름을 입력하세요"
+      required
+      />
+
+
+      <input id="btn-input" 
+      type="submit" value="login"
+      />
+    </form>
+    
+    <div id="logout-box">
+      <div id="profil-img"></div>
+    <h2 id="user-name" class="hidden"></h2>
+
+    <form id="logout-form" class="logout-hidden">
+      <input id="logout-input"
+      type="submit" value="log-out"
+      />
+    </form>
+    </div>
+  </div>
+
+    <div id="todo-box">
+    <form id="todo-form">
+      <h2>To Do List</h2>
+      <input type="text"
+      placeholder="오늘 해야 할 일을 적어보세요"
+      required
+      />
+    </form>
+      <div id="list-box">
+    <ul id="todo-list"></ul>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+  <script src="clock.js"></script>
+  <script src="health.js"></script>
+  <script src="login.js"></script>
+  <script src="dessert.js"></script>
+  <script src="random-bg.js"></script>
+  <script src="todo-list.js"></script>
+  <script src="weather.js"></script>
+</body>
+</html>
